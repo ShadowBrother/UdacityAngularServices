@@ -1,8 +1,10 @@
 (function(){
   var service = jQuery( 'body' ).injector().get('brickWarehouse');
+  console.log(service);
   var numberHasChanged = false;
 
   var brick1 = document.querySelector('#BaB-1x1');
+  console.log(brick1);
   var quantity1 = brick1.querySelector('.quantity');
   var startingQuantity = quantity1.innerHTML;
   var brickButton = brick1.querySelector('button');
