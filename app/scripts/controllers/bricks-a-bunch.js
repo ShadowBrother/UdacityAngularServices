@@ -17,7 +17,7 @@ angular.module('serviceQuizApp')
 				console.log(data);
 				vm.name = data;
 				vm.bricks = data;
-			});
+}, function(data) {console.log("bricks a bunch warehouse.getBricks().then failed");});
 
 		}
 	]);

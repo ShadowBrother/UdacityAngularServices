@@ -14,7 +14,8 @@ angular.module('serviceQuizApp')
 
 	this.getBricks = function ()
 	{
-		return $.get('scripts/bricks.json');
+		var data = $.get('scripts/bricks.json', function(data){console.log("success");}, function(data){ console.log("get failed");});
+		return data;
 	};
 
 	this.buy = function (brick)
